@@ -1,13 +1,13 @@
 # Setup
-title: Quattle
-tagline: by Victor Wynne
-url: https://quattle.victorwynne.com
-paginate: 1
+title: slz
+tagline: by Salazryl Ismail
+url: https://www.salazryl.com
+paginate: 5
 baseurl: ""
 permalink: :title/
 
 # set timezone
-timezone: America/New_York
+timezone: 	Asia/Kuala_Lumpur
 
 kramdown:
     footnote_backlink: "&#10548;"
@@ -39,9 +39,9 @@ sass:
 
 # Specify the author for blog posts
 author_name:
-  name: Victor Wynne
-  email: hello@victorwynne.com
-  web: https://quattle.victorwynne.com
+  name: Salazryl Ismail
+  email: hi@salazryl.com
+  web: https://www.salazryl.com
 
 # Custom vars
 version: 1.5.1
