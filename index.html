@@ -61,3 +61,13 @@ source: <a href="{{ page.link }}">{{ page.link | remove:'http://' | remove:'www.
   <br><a class="next" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer →</a>
   {% endif %}
 </div>
+
+const client = createClient({
+  space: process.env.blankspaceCONTENTFUL_SPACE_ID,
+  accessToken: process.env.blankspaceIS_PREVIEW === "true" ?
+    process.env.blankspaceCONTENTFUL_PREVIEW_TOKEN :
+    process.env.blankspaceCONTENTFUL_DELIVERY_TOKEN
+})
+
+// Alternatively you can use the CDN API as follows...
+const baseUrl = process.env.blankspaceIS_PREVIEW === "true" ? "preview.contentful.com" : "cdn.contentful.com"
